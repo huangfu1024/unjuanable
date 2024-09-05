@@ -1,16 +1,12 @@
-package com.hf.left.domain.orgmng;
-
-
-import lombok.Data;
+package com.hf.left.application.orgmng;
 
 /**
  * @description: TODO
  * @author: huang fu
- * @date: 2024/9/4 14:52
+ * @date: 2024/9/5 11:26
  * @version: 1.0
  */
-@Data
-public class Org {
+public class OrgDto {
 
     private Long id;
 
@@ -24,7 +20,7 @@ public class Org {
 
     private String name;
 
-    private OrgStatus status;
+    private String status;
 
     private String createdAt;
 
@@ -34,9 +30,4 @@ public class Org {
 
     private Long lastUpdateBy;
 
-    public Org(){
-        status = OrgStatus.EFFECTIVE;
-    }
 }
-
-
