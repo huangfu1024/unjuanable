@@ -23,7 +23,6 @@ public class OrgController {
 
     @PostMapping("/api/organizations")
     public OrgDto addOrg(@RequestBody OrgDto orgDto){
-        return
+        return orgService.addOrg(orgDto, 1L);
     }
-
 }
