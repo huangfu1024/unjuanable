@@ -120,4 +120,31 @@ public class Emp extends AuditableEntity {
         return otherStart.isBefore(thisEnd) && otherEnd.isAfter(thisStart);
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTenantId(Long tenantId) {
+        this.tenantId = tenantId;
+    }
+
+    public void setOrgId(Long orgId) {
+        this.orgId = orgId;
+    }
+
+    public void setNum(String num) {
+        this.num = num;
+    }
+
+    public void setIdNum(String idNum) {
+        this.idNum = idNum;
+    }
+
+    public void setGender(com.hf.left.domain.orgmng.emp.Gender gender) {
+        Gender = gender;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
 }
