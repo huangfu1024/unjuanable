@@ -1,6 +1,4 @@
-package com.hf.left.domain.orgmng;
-
-import org.springframework.stereotype.Component;
+package com.hf.left.domain.orgmng.org;
 
 /**
  * @description: TODO

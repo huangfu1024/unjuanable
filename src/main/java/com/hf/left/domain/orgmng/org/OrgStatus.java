@@ -1,4 +1,4 @@
-package com.hf.left.domain.orgmng;
+package com.hf.left.domain.orgmng.org;
 
 /**
  * @description: TODO
@@ -8,7 +8,8 @@ package com.hf.left.domain.orgmng;
  */
 public enum OrgStatus {
 
-    EFFECTIVE("effective");
+    EFFECTIVE("effective"),    CANCEL("cancel");
+
 
     private String name;
 

@@ -1,9 +1,9 @@
 package com.hf.left.application.orgmng;
 
-import com.hf.left.domain.orgmng.OrgBuilder;
-import com.hf.left.domain.orgmng.OrgBuilderFactory;
-import com.hf.left.domain.orgmng.OrgRepository;
-import com.hf.left.domain.orgmng.Org;
+import com.hf.left.domain.orgmng.org.OrgBuilder;
+import com.hf.left.domain.orgmng.org.OrgBuilderFactory;
+import com.hf.left.domain.orgmng.org.OrgRepository;
+import com.hf.left.domain.orgmng.org.Org;
 import org.springframework.stereotype.Service;
 
 /**
@@ -24,23 +24,20 @@ public class OrgService {
         this.orgBuilderFactory = orgBuilderFactory;
     }
 
-    public OrgDto addOrg(OrgDto request, Long userId){
+    public OrgResponse addOrg(OrgResponse request, Long userId){
         OrgBuilder orgBuilder = orgBuilderFactory.create();
         Org org = orgBuilder.tenantId(request.getTenantId()).build();
         org = orgRepository.save(org);
         return buildOrgDto(org);
     }
 
-    private OrgDto buildOrgDto(Org org) {
+    private OrgResponse buildOrgDto(Org org) {
         // 将领域对象的值赋给DTO
         return null;
     }
 
-    private Org buildOrg(OrgDto request, Long userId) {
+    private Org buildOrg(OrgResponse request, Long userId) {
         // 将DTO的值赋给领域对象...
         return null;
     }
-
-
-
 }

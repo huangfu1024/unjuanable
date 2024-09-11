@@ -1,7 +1,7 @@
 package com.hf.left.adpter.driving.persistence.orgmng;
 
-import com.hf.left.domain.orgmng.Org;
-import com.hf.left.domain.orgmng.OrgRepository;
+import com.hf.left.domain.orgmng.org.Org;
+import com.hf.left.domain.orgmng.org.OrgRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

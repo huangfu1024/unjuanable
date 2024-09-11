@@ -1,6 +1,6 @@
 package com.hf.left.adpter.driven.restful.orgmng;
 
-import com.hf.left.application.orgmng.OrgDto;
+import com.hf.left.application.orgmng.OrgResponse;
 import com.hf.left.application.orgmng.OrgService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +22,7 @@ public class OrgController {
     }
 
     @PostMapping("/api/organizations")
-    public OrgDto addOrg(@RequestBody OrgDto orgDto){
+    public OrgResponse addOrg(@RequestBody OrgResponse orgDto){
         return orgService.addOrg(orgDto, 1L);
     }
 }

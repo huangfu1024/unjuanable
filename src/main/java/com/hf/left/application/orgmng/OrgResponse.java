@@ -9,7 +9,7 @@ import lombok.Data;
  * @version: 1.0
  */
 @Data
-public class OrgDto {
+public class OrgResponse {
 
     private Long id;
 

@@ -1,9 +1,6 @@
-package com.hf.left.domain.orgmng;
+package com.hf.left.domain.orgmng.org;
 
-import com.hf.left.application.orgmng.OrgDto;
 import com.hf.left.domain.tenantmng.TenantValidator;
-import com.sun.org.apache.xpath.internal.operations.Or;
-import lombok.Builder;
 
 /**
  * @description: TODO

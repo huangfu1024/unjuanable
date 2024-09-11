@@ -1,4 +1,4 @@
-package com.hf.left.domain.orgmng;
+package com.hf.left.domain.orgmng.org;
 
 import com.hf.left.domain.tenantmng.TenantValidator;
 import org.springframework.beans.factory.annotation.Autowired;

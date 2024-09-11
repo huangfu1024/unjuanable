@@ -1,4 +1,4 @@
-package com.hf.left.domain.orgmng;
+package com.hf.left.domain.orgmng.orgtype;
 
 /**
  * @description: TODO
